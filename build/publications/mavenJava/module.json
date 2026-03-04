@@ -3,7 +3,7 @@
   "component": {
     "group": "com.github.shikeik",
     "module": "GdxUI",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -41,13 +41,13 @@
       ],
       "files": [
         {
-          "name": "GdxUI-1.0.0.jar",
-          "url": "GdxUI-1.0.0.jar",
-          "size": 45852,
-          "sha512": "ef0b518087517a950016158452c225c955138ded9014142b8707ad990b93d63f129f01cc8c60bbf32af4fef0dd56f867d4c0056b0d1342a4f7e74603e97b46e6",
-          "sha256": "7f49604195eaa7ac22dda4a81fde9b0d4159b971eca02b4b0a0f234d1ae27156",
-          "sha1": "4f22cf91e5c776578fb511fa246010519419517b",
-          "md5": "ea038bb07404f0d15732643f2e72caaa"
+          "name": "GdxUI-1.1.0.jar",
+          "url": "GdxUI-1.1.0.jar",
+          "size": 51771,
+          "sha512": "063c33e5cb095c691be2ad62a130e049074726701768b4dcaa8544fe419bc2d487daed889793b3f65d1debb3d7524f0bdf25c6c35198cbb40e0c49a0fd91cd1d",
+          "sha256": "48a16c7e2ba8a898be0365c99b6f5476f6cfd4423576d6507321fafcd07c4dae",
+          "sha1": "d12bba01f2388ad8270c0eeedff88f9303f48ae3",
+          "md5": "8ef4200ffa97d94cafacb4f6f2809e17"
         }
       ]
     },
@@ -78,13 +78,13 @@
       ],
       "files": [
         {
-          "name": "GdxUI-1.0.0.jar",
-          "url": "GdxUI-1.0.0.jar",
-          "size": 45852,
-          "sha512": "ef0b518087517a950016158452c225c955138ded9014142b8707ad990b93d63f129f01cc8c60bbf32af4fef0dd56f867d4c0056b0d1342a4f7e74603e97b46e6",
-          "sha256": "7f49604195eaa7ac22dda4a81fde9b0d4159b971eca02b4b0a0f234d1ae27156",
-          "sha1": "4f22cf91e5c776578fb511fa246010519419517b",
-          "md5": "ea038bb07404f0d15732643f2e72caaa"
+          "name": "GdxUI-1.1.0.jar",
+          "url": "GdxUI-1.1.0.jar",
+          "size": 51771,
+          "sha512": "063c33e5cb095c691be2ad62a130e049074726701768b4dcaa8544fe419bc2d487daed889793b3f65d1debb3d7524f0bdf25c6c35198cbb40e0c49a0fd91cd1d",
+          "sha256": "48a16c7e2ba8a898be0365c99b6f5476f6cfd4423576d6507321fafcd07c4dae",
+          "sha1": "d12bba01f2388ad8270c0eeedff88f9303f48ae3",
+          "md5": "8ef4200ffa97d94cafacb4f6f2809e17"
         }
       ]
     },
@@ -98,13 +98,13 @@
       },
       "files": [
         {
-          "name": "GdxUI-1.0.0-sources.jar",
-          "url": "GdxUI-1.0.0-sources.jar",
-          "size": 20907,
-          "sha512": "a7817edbaddf371015aeee1b40eda815e46946e3e376faca2f1e6505246b4b19fa0e48de1713918b3dec15b38c66d19313cffab05c5810eb09bdc17faeba4df5",
-          "sha256": "41a684545274aed5d888e0cf44c8d5f81e33c71060b35089dc8b930bc17e4150",
-          "sha1": "19b5deda69e5d3384351d763cee8627b64fc5353",
-          "md5": "5896da575b93810721f47b3d83d36297"
+          "name": "GdxUI-1.1.0-sources.jar",
+          "url": "GdxUI-1.1.0-sources.jar",
+          "size": 24273,
+          "sha512": "bc32b1427aae029f54aab10a83cbb7f19880acc958b7b9e536c73b65e82415b0212b01a64613e1cacc9f1e0e7a5ddad65795424ebf19cddd53f19bbf28aaa4ca",
+          "sha256": "4e33b1aae0db9dbe9f49acf54884311cc485be0cb9a3cfcf472e42c17511c13e",
+          "sha1": "778843c476b0768d70534f1521ad8bf43918d796",
+          "md5": "1208a06483634fc70d64787ec69984de"
         }
       ]
     }
