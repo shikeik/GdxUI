@@ -1,0 +1,47 @@
+// GdxUI — 纯净 UI 组件库
+// 仅依赖 libGDX + VisUI，无 GdxCore 内部依赖
+// 提供通用的控制台输入栏、可选中标签、滚动面板等 UI 组件
+
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+group = jitpackGroup
+version = projectVersion
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(jdkVersion as Integer)
+    }
+    withSourcesJar()
+}
+
+repositories {
+    google()
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://maven.aliyun.com/repository/public/' }
+    maven { url 'https://maven.aliyun.com/repository/google' }
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    api "com.badlogicgames.gdx:gdx:${gdxVersion}"
+    api "com.kotcrab.vis:vis-ui:${visUIVersion}"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            groupId = project.group as String
+            artifactId = rootProject.name   // 'GdxUI'
+            version = project.version as String
+        }
+    }
+}

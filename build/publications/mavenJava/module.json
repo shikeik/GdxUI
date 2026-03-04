@@ -1,0 +1,112 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.github.shikeik",
+    "module": "GdxUI",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.badlogicgames.gdx",
+          "module": "gdx",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "com.kotcrab.vis",
+          "module": "vis-ui",
+          "version": {
+            "requires": "1.5.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "GdxUI-1.0.0.jar",
+          "url": "GdxUI-1.0.0.jar",
+          "size": 45852,
+          "sha512": "ef0b518087517a950016158452c225c955138ded9014142b8707ad990b93d63f129f01cc8c60bbf32af4fef0dd56f867d4c0056b0d1342a4f7e74603e97b46e6",
+          "sha256": "7f49604195eaa7ac22dda4a81fde9b0d4159b971eca02b4b0a0f234d1ae27156",
+          "sha1": "4f22cf91e5c776578fb511fa246010519419517b",
+          "md5": "ea038bb07404f0d15732643f2e72caaa"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.badlogicgames.gdx",
+          "module": "gdx",
+          "version": {
+            "requires": "1.12.1"
+          }
+        },
+        {
+          "group": "com.kotcrab.vis",
+          "module": "vis-ui",
+          "version": {
+            "requires": "1.5.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "GdxUI-1.0.0.jar",
+          "url": "GdxUI-1.0.0.jar",
+          "size": 45852,
+          "sha512": "ef0b518087517a950016158452c225c955138ded9014142b8707ad990b93d63f129f01cc8c60bbf32af4fef0dd56f867d4c0056b0d1342a4f7e74603e97b46e6",
+          "sha256": "7f49604195eaa7ac22dda4a81fde9b0d4159b971eca02b4b0a0f234d1ae27156",
+          "sha1": "4f22cf91e5c776578fb511fa246010519419517b",
+          "md5": "ea038bb07404f0d15732643f2e72caaa"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "GdxUI-1.0.0-sources.jar",
+          "url": "GdxUI-1.0.0-sources.jar",
+          "size": 20907,
+          "sha512": "a7817edbaddf371015aeee1b40eda815e46946e3e376faca2f1e6505246b4b19fa0e48de1713918b3dec15b38c66d19313cffab05c5810eb09bdc17faeba4df5",
+          "sha256": "41a684545274aed5d888e0cf44c8d5f81e33c71060b35089dc8b930bc17e4150",
+          "sha1": "19b5deda69e5d3384351d763cee8627b64fc5353",
+          "md5": "5896da575b93810721f47b3d83d36297"
+        }
+      ]
+    }
+  ]
+}
