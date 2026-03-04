@@ -139,6 +139,10 @@ public class ConsoleTextField extends VisTable {
     private VisTable hintPopup;
     /** 弹窗内的文本标签 */
     private VisLabel hintPopupLabel;
+    
+    /** 统一字体缩放比例 */
+    private float fontScale = 1.0f;
+
     /** 缓存坐标计算向量（避免每帧分配） */
     private final Vector2 tempVec = new Vector2();
 
@@ -417,6 +421,18 @@ public class ConsoleTextField extends VisTable {
     public void setMessageText(String text) {
         textField.setMessageText(text);
     }
+    
+    /** 
+     * 设置统一字体缩放比例。
+     * 影响输入框文本、幽灵提示文本、浮动弹窗文本。
+     */
+    public void setFontScale(float scale) {
+        this.fontScale = scale;
+        if (hintPopupLabel != null) {
+            hintPopupLabel.setFontScale(scale);
+        }
+        // TextField 的缩放通过重写 draw 实现
+    }
 
     /** 获取当前文本 */
     public String getText() {
@@ -528,7 +544,7 @@ public class ConsoleTextField extends VisTable {
      * 例如用户输入 "/h"，ghostText 为 "/help" 时，
      * 输入框同时显示白色 "/h" 和灰色 "elp"。
      */
-    private static class HintTextField extends VisTextField {
+    private class HintTextField extends VisTextField {
         private String ghostText = "";
         private final GlyphLayout ghostLayout = new GlyphLayout();
         private final Color ghostColor = new Color(0.6f, 0.6f, 0.6f, 0.5f);
@@ -545,8 +561,22 @@ public class ConsoleTextField extends VisTable {
 
         @Override
         public void draw(Batch batch, float parentAlpha) {
+            // 动态应用字体缩放
+            BitmapFont font = getStyle().font;
+            float oldScaleX = font.getData().scaleX;
+            float oldScaleY = font.getData().scaleY;
+            
+            if (fontScale != 1.0f) {
+                font.getData().setScale(fontScale);
+            }
+
             super.draw(batch, parentAlpha);
             drawGhostHint(batch, parentAlpha);
+            
+            // 恢复字体缩放
+            if (fontScale != 1.0f) {
+                font.getData().setScale(oldScaleX, oldScaleY);
+            }
         }
 
         /**
