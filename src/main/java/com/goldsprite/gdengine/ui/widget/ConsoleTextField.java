@@ -160,6 +160,7 @@ public class ConsoleTextField extends VisTable {
             public void keyboardFocusChanged(FocusEvent event, Actor actor, boolean focused) {
                 if (focused) {
                     focusedCount++;
+                    updateCommandHint(textField.getText());
                 } else {
                     focusedCount = Math.max(0, focusedCount - 1);
                     hideHintPopup();
