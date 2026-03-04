@@ -296,11 +296,11 @@ public class ConsoleTextField extends VisTable {
                 // 内嵌灰色幽灵提示：第一个匹配命令的完整文本
                 textField.setGhostText(commandPrefix + currentSuggestions.get(0).name);
 
-                // 浮动弹窗：所有匹配命令列表
+                // 浮动弹窗：所有匹配命令列表（每条独占一行，便于阅读）
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < currentSuggestions.size(); i++) {
                     HintEntry entry = currentSuggestions.get(i);
-                    if (i > 0) sb.append("  |  ");
+                    if (i > 0) sb.append("\n");
                     sb.append(commandPrefix).append(entry.name);
                     if (!entry.description.isEmpty()) sb.append(" ").append(entry.description);
                 }
